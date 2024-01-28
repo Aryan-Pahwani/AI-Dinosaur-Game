@@ -41,7 +41,7 @@ class Dinosaur:
         self.rect = pygame.Rect(self.X_POS, self.Y_POS, img.get_width(), img.get_height())
         self.color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
         self.step_index = 0
-        self.name = random.choice(["Arya", "Aryan", "Piyush", "Aneesh", "Mehul", "Rashika", "Khushi", "Eeshan", "Utsav", "Rahul", "Amisha", "Hitler", "Priyanshi"])
+        self.name = random.choice(["Artemis", "Apollo", "Aristotle", "Coffee", "Mexico", "Skynet", "Anti-Cactus Innator", "Dinosaur", "die? no!, saur.", "bulbasaur", "Attack Helicopter", "I can't think of more names"])
 
     def update(self):
         if self.dino_run:
