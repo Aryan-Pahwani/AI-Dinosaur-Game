@@ -41,7 +41,7 @@ class Dinosaur:
         self.rect = pygame.Rect(self.X_POS, self.Y_POS, img.get_width(), img.get_height())
         self.color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
         self.step_index = 0
-        self.name = random.choice(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]) + random.choice(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]) + random.choice(["A",  "E", "I", "O", "U"]) + random.choice(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"])
+        self.name = random.choice(["Arya", "Aryan", "Piyush", "Aneesh", "Mehul", "Rashika", "Khushi", "Eeshan", "Utsav", "Rahul", "Amisha", "Hitler", "Priyanshi"])
 
     def update(self):
         if self.dino_run:
@@ -213,8 +213,8 @@ def run(config_path):
     )
 
     pop = neat.Population(config)
-
+    pop.run(eval_genomes, 50)
 
 if __name__ == '__main__':
-    config_path = os.path.join("C:/Users/Flame32/Desktop/PyProj/Dino", 'config.txt')
+    config_path = os.path.join("CONFIG_FILE_PATH", 'config.txt')
     run(config_path)
